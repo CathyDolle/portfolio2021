@@ -1,6 +1,7 @@
 const lightColors = {
   fontColor: 'black',
   bgColor: 'white',
+  mainColor: '#ef4234',
   lineColor: '#171717',
 }
 

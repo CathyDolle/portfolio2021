@@ -4,7 +4,8 @@ import styled from '@emotion/styled';
 import { fontFace } from './library/fonts';
 import HomePage from './pages/HomePage';
 import { darkTheme, lightTheme } from './library/theme';
-import Wrapper from './components/Wrapper'
+import Router from './components/Router'
+
 
 const globalStyles = css`
   * {
@@ -27,14 +28,14 @@ function App() {
   const [dark, setDark] = useState(true);
 
   return (
-    <ThemeProvider theme={dark ? darkTheme : lightTheme}>
-      <FullBackground>
-        <Global styles={fontFace} />
-        <Global styles={globalStyles} />
-        {/* <button type="button" onClick={() => setDark(!dark)}>Switch theme</button> */}
-        <HomePage/>
-      </FullBackground>
-    </ThemeProvider>
+      <ThemeProvider theme={dark ? darkTheme : lightTheme}>
+        <FullBackground>
+          <Global styles={fontFace} />
+          <Global styles={globalStyles} />
+          {/* <button type="button" onClick={() => setDark(!dark)}>Switch theme</button> */}
+          <Router/>
+        </FullBackground>
+      </ThemeProvider>
   );
 }
 

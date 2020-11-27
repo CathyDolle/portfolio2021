@@ -23,4 +23,4 @@ const BodyText = styled.p`
 `;
 
 
-export { Title, SubTitle, BodyText, };
+export { Title, SubTitle, BodyText};

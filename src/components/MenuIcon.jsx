@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled';
+import { NavLink } from "react-router-dom";
+
 
 const MenuIconBar = styled.div`
   width: 100%;
@@ -23,11 +25,13 @@ const MenuIconLittleBar = styled.div`
 
 function MenuIcon() {
     return (
-        <MenuIconContainer>
-          <MenuIconBar/>
-          <MenuIconBar/>
-          <MenuIconLittleBar/>
-        </MenuIconContainer>
+        <NavLink to="/Menu">
+          <MenuIconContainer>
+            <MenuIconBar/>
+            <MenuIconBar/>
+            <MenuIconLittleBar/>
+          </MenuIconContainer>
+        </NavLink>
     )
 }
 
