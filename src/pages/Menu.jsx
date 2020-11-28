@@ -2,8 +2,10 @@ import React from 'react'
 import Wrapper from '../components/wrapper/Wrapper';
 import styled from '@emotion/styled';
 import MenuItem from '../components/menu/MenuItem';
+import CustomSection from '../components/menu/CustomSection'
 
 const MenuSection = styled.section`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -19,6 +21,7 @@ function Menu() {
   return (
     <Wrapper>
       <MenuSection>
+        <CustomSection/>
         <MenuItem to="/" number="01" linkName="Home" translation="ホーム"></MenuItem>
       </MenuSection>
       <MenuSection>

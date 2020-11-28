@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useContext } from "react"
 import { Global, ThemeProvider, css } from "@emotion/react"
 import { fontFace } from "./library/fonts"
 import { darkTheme, lightTheme } from "./library/theme"
 import Router from "./components/Router"
+import OurThemeProvider, { themeContext } from "./components/contexts/theme"
+import OurGridProvider, { gridContext } from "./components/contexts/grid"
 
 const globalStyles = css`
   * {
@@ -18,7 +20,7 @@ const globalStyles = css`
 `
 
 function App() {
-  const [dark, setDark] = useState(true)
+  const { dark } = useContext(themeContext)
 
   useEffect(() => {
     if (dark) {
@@ -32,10 +34,19 @@ function App() {
     <ThemeProvider theme={dark ? darkTheme : lightTheme}>
       <Global styles={fontFace} />
       <Global styles={globalStyles} />
-      {/* <button type="button" onClick={() => setDark(!dark)}>Switch theme</button> */}
       <Router />
     </ThemeProvider>
   )
 }
 
-export default App
+const WithContexts = () => (
+  <OurThemeProvider>
+    <OurGridProvider>
+      <App />
+    </OurGridProvider>
+  </OurThemeProvider>
+)
+
+
+export default  WithContexts;
+

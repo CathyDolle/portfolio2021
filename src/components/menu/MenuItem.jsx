@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { NavLink } from "react-router-dom";
-import { MenuLink, SubTitle } from "../../library/typography";
+import { MenuLink, MenuNumberLink } from "../../library/typography";
 
 
 const MenuLinkContent = styled(NavLink)`
@@ -14,7 +14,7 @@ const MenuLinkContent = styled(NavLink)`
 function MenuItem({number, linkName, to, className, translation}) {
   return (
     <MenuLinkContent to={to} className={className}>
-      <SubTitle>{number}</SubTitle>
+      <MenuNumberLink>{number}</MenuNumberLink>
       <MenuLink translation={translation}>{linkName}</MenuLink>
     </MenuLinkContent>
   );
