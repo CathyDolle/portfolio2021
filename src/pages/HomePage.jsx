@@ -20,7 +20,7 @@ const LastName = styled.h1`
 // Cathy
 const FirstName = styled.h1`
   font-family: 'Saol Display';
-  margin: 0 0 6px 0;
+  margin: 0 0 -28px 0;
   font-size: 11.8rem;
   color: ${props => props.theme.colors.fontColor};
 `;
@@ -75,6 +75,7 @@ const TextDescriptionSkill = styled.div`
 `;
 
 const JapaneseText = styled.span`
+  font-family: neue-haas-grotesk-text, sans-serif;
   color: ${props => props.theme.colors.mainColor};
   font-size: 10rem;
   margin: -45px 0 0 30px;

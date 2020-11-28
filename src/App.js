@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Global, ThemeProvider, css } from '@emotion/react';
-import styled from '@emotion/styled';
 import { fontFace } from './library/fonts';
-import HomePage from './pages/HomePage';
 import { darkTheme, lightTheme } from './library/theme';
 import Router from './components/Router'
 
@@ -31,7 +29,7 @@ function App() {
       <ThemeProvider theme={dark ? darkTheme : lightTheme}>
         <Global styles={fontFace} />
         <Global styles={globalStyles} />
-         {/*<button type="button" onClick={() => setDark(!dark)}>Switch theme</button>*/}
+         {/* <button type="button" onClick={() => setDark(!dark)}>Switch theme</button> */}
         <Router/>
       </ThemeProvider>
   );

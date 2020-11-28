@@ -21,7 +21,6 @@ const Line = styled.section`
 `;
 
 
-
 function Background() {
   return (
     <Content>
