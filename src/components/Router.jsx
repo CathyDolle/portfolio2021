@@ -6,7 +6,7 @@ const AppRouter = () => (
   <Router>
     <Switch>
       {routes.map(({ path, component }, i) => (
-        <Route key={i} path={path} component={component} />
+        <Route key={i} path={path} component={component} exact />
       ))}
     </Switch>
   </Router>
