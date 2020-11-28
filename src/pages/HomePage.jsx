@@ -56,9 +56,9 @@ const JapaneseText = styled.span`
 
 // SECTIONS
 
-// GLOBAL TEXT SECTION
+// TEXT CONTENT
 const TextContent = styled.section`
-  width: ${props => props.theme.sizes.threeColumns};
+  flex: 3;
   height: 100%;
   display: flex;
   align-items: flex-start;
@@ -96,7 +96,7 @@ const TextDescriptionSkill = styled.div`
 //IMG
 
 const ImgContainer = styled.div`
-  width: ${props => props.theme.sizes.oneColumn};
+  flex: 1;
   height: 100%;
   display: flex;
   align-items: center;
