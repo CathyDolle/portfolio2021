@@ -20,25 +20,16 @@ const padding = {
   wrapperPadding: '150px',
 }
 
-const sizes = {
-  threeColumns: 'calc(100% / 4 * 3)',
-  oneColumn: 'calc(100% / 4)',
-  twoColumns: 'calc(100% / 2)',
-  fourColumns: '100%',
-}
-
 const lightTheme = {
   colors: lightColors,
   margins: margins,
   padding: padding,
-  sizes: sizes,
 }
 
 const darkTheme = {
   colors: darkColors,
   margins: margins,
   padding: padding,
-  sizes: sizes,
 }
   
 export { lightTheme, darkTheme };
