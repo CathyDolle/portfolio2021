@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled';
 import { SubTitle } from './../library/typography';
-import Wrapper from './../components/Wrapper'
+import Wrapper from '../components/wrapper/Wrapper'
 import Arkestar from './../assets/img/works/arkestar.png'
 
 
