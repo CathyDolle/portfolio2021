@@ -15,13 +15,6 @@ const globalStyles = css`
     font-size: 62.5%; 
   }
   `;
-  
-const FullBackground = styled.div`
-  position: relative;
-  width: 100vw;
-  min-height: 100vh;
-  background-color: ${props => props.theme.colors.bgColor};
-`;
 
 function App() {
   const [dark, setDark] = useState(true);
