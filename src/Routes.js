@@ -1,5 +1,6 @@
 import Home from './pages/HomePage';
 import Menu from './pages/Menu';
+import About from './pages/About';
 
 const routes = [
     {
@@ -11,6 +12,11 @@ const routes = [
         path: "/Menu",
         name: "Menu",
         component: Menu,
+    },
+    {
+        path: "/About",
+        name: "About",
+        component: About,
     }
 ]
 

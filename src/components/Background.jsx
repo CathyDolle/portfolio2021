@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from '@emotion/styled';
+import { gridContext } from "../components/contexts/grid"
 
 const getWrapperPadding = ({ theme }) => theme.padding.wrapperPadding;
 
@@ -15,20 +16,25 @@ const Content = styled.section`
 `;
 
 const Line = styled.section`
-  width: 0.5px;
+  width: 1px;
   height: 100%;
-  background: ${props => props.theme.colors.lineColor};
+  background: ${props => props.theme.colors.inactiveColor};
+  transform: ${({ active }) => active ? 'scale3d(1, 1, 1)' : 'scale3d(1, 0, 1)'};
+  transition: transform 2s;
+  transform-origin: top;
 `;
 
 
 function Background() {
+  const { grid } = useContext(gridContext);
+
   return (
     <Content>
-      <Line />
-      <Line />
-      <Line />
-      <Line />
-      <Line />
+      <Line active={grid}/>
+      <Line active={grid}/>
+      <Line active={grid}/>
+      <Line active={grid}/>
+      <Line active={grid}/>
     </Content>
   )
 }

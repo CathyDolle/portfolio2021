@@ -29,7 +29,7 @@ const FirstName = styled.h1`
 const Skill = styled.h3`
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 400;
-  margin: -1rem 2rem 0 0;
+  margin: 1.5rem 2rem 0 0;
   font-style: normal;
   font-size: 4rem;
   color: ${props => props.theme.colors.fontColor};
@@ -39,7 +39,7 @@ const Skill = styled.h3`
 const Skill2 = styled.h3`
   font-family: neue-haas-grotesk-text, sans-serif;
   font-weight: 400;
-  margin-top: 0.4rem;
+  margin-top: -2.6rem;
   font-style: normal;
   font-size: 1.8rem;
   color: ${props => props.theme.colors.fontColor};
@@ -50,7 +50,7 @@ const JapaneseText = styled.span`
   font-family: neue-haas-grotesk-text, sans-serif;
   color: ${props => props.theme.colors.mainColor};
   font-size: 10rem;
-  margin: -4rem 0 0 3.0rem;
+  margin: -1.5rem 0 0 3.0rem;
   font-weight: 600;
 `;
 
@@ -77,6 +77,7 @@ const TextName = styled.div`
 
 // Description (Skills)
 const DescriptionContent = styled.div`
+  margin-top: -26px;
   display: flex;
 `
 
