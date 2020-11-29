@@ -1,12 +1,13 @@
 import React from 'react'
 import styled from '@emotion/styled';
 import { NavLink } from "react-router-dom";
+import { getColor } from '../../library/theme';
 
 
 const MenuIconBar = styled.div`
   width: 100%;
   height: 2px;
-  background: ${props => props.theme.colors.fontColor};
+  background: ${getColor('fontColor')};
 `;
 
 const MenuIconContainer = styled.div`
@@ -20,7 +21,7 @@ const MenuIconContainer = styled.div`
 const MenuIconLittleBar = styled.div`
   width: 50%;
   height: 2px;
-  background: ${props => props.theme.colors.fontColor};
+  background: ${getColor('fontColor')};
 `;
 
 function MenuIcon() {
