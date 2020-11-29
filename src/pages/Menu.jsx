@@ -24,12 +24,12 @@ function Menu() {
     <Wrapper withFooter>
       <MenuSection center>
         <CustomSection/>
-        <MenuItem to="/" number="01" linkName="Home" translation="ホーム"></MenuItem>
+        <MenuItem to="/" number="01" linkName="Home" translation="ホーム"/>
       </MenuSection>
       <MenuSection>
-        <MenuItem to="/" number="02" linkName="Works" translation="プロジェクト"></MenuItem>
-        <MenuAbout to="/About" number="03" linkName="About" translation="情報"></MenuAbout>
-        <MenuItem to="/" number="04" linkName="Archives" translation="アーカイブ"></MenuItem>
+        <MenuItem to="/" number="02" linkName="Works" translation="プロジェクト"/>
+        <MenuAbout to="/About" number="03" linkName="About" translation="情報"/>
+        <MenuItem to="/" number="04" linkName="Archives" translation="アーカイブ"/>
       </MenuSection>
     </Wrapper>
   )

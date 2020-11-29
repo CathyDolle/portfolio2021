@@ -12,6 +12,8 @@ const darkColors = {
   inactiveColor: '#171717',
 }
 
+export const getColor = color => ({ theme }) => theme.colors[color];
+
 const margins = {
 
 }
@@ -19,6 +21,8 @@ const margins = {
 const padding = {
   wrapperPadding: '150px',
 }
+
+export const getWrapperPadding = ({ theme }) => theme.padding.wrapperPadding;
 
 const lightTheme = {
   colors: lightColors,

@@ -1,5 +1,6 @@
 import styled from "@emotion/styled"
 import { css } from "@emotion/react"
+import { getColor } from './theme';
 
 /******************************************************
 FAMILY FONT
@@ -38,14 +39,14 @@ const BodyText = styled.p`
 
 // InactiveBodyText
 const InactiveBodyText = styled(BodyText)`
-  color: ${(props) => props.theme.colors.inactiveColor};
+  color: ${getColor('inactiveColor')};
 `
 
 // H3
 const SubTitle = styled.h2`
   ${SaolTypo};
   font-size: 3.2rem;
-  color: ${(props) => props.theme.colors.mainColor};
+  color: ${getColor('mainColor')};
 `
 
 // H3 Headline
@@ -53,7 +54,7 @@ const Headline = styled.h3`
   ${NeueTypo};
   font-size: 1.6rem;
   margin: 1rem 0 -0.5rem 0;
-  color: ${(props) => props.theme.colors.mainColor};
+  color: ${getColor('mainColor')};
 `
 
 /******************************************************
@@ -75,7 +76,7 @@ const MenuLink = styled.span`
     transform: translateX(50%);
     content: "${(props) => props.translation}";
     font-size: 3.5rem;
-    color: ${(props) => props.theme.colors.mainColor};
+    color: ${getColor('mainColor')};
     opacity: 0;
     transition: opacity 1s;
     font-weight: 500;

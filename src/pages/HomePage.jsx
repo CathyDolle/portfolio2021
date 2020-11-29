@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from '@emotion/styled';
-import { SubTitle } from './../library/typography';
+import { SubTitle } from '../library/typography';
 import Wrapper from '../components/wrapper/Wrapper'
 import Arkestar from './../assets/img/works/arkestar.png'
+import { getColor } from '../library/theme';
 
 
 //TYPOGRAPHY
@@ -14,7 +15,7 @@ const LastName = styled.h1`
   font-style: normal;
   font-size: 11.8rem;
   margin: 0 2rem 0 -0.5rem;
-  color: ${props => props.theme.colors.fontColor};
+  color: ${getColor('fontColor')};
 `;
 
 // Cathy
@@ -22,7 +23,7 @@ const FirstName = styled.h1`
   font-family: 'Saol Display';
   margin: 0 0 -2.8rem 0;
   font-size: 11.8rem;
-  color: ${props => props.theme.colors.fontColor};
+  color: ${getColor('fontColor')};
 `;
 
 // UI UX
@@ -32,7 +33,7 @@ const Skill = styled.h3`
   margin: 1.5rem 2rem 0 0;
   font-style: normal;
   font-size: 4rem;
-  color: ${props => props.theme.colors.fontColor};
+  color: ${getColor('fontColor')};
 `;
 
 // DEV
@@ -42,13 +43,13 @@ const Skill2 = styled.h3`
   margin-top: -2.6rem;
   font-style: normal;
   font-size: 1.8rem;
-  color: ${props => props.theme.colors.fontColor};
+  color: ${getColor('fontColor')};
 `;
 
 // JAPANESE CHAR 
 const JapaneseText = styled.span`
   font-family: neue-haas-grotesk-text, sans-serif;
-  color: ${props => props.theme.colors.mainColor};
+  color: ${getColor('mainColor')};
   font-size: 10rem;
   margin: -1.5rem 0 0 3.0rem;
   font-weight: 600;

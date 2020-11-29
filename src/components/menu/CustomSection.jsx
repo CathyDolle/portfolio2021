@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { Headline } from '../../library/typography'
 import { themeContext } from '../../components/contexts/theme';
 import { gridContext } from '../../components/contexts/grid';
+import { getColor } from '../../library/theme';
 
 const CustomSectionContainer = styled.section`
   display: flex;
@@ -17,7 +18,7 @@ const CustomButton = styled.button`
   position: relative;
   cursor: pointer;
   background: none;
-  color: ${(props) => props.theme.colors.fontColor};
+  color: ${getColor('fontColor')};
   font-size: 1.2rem;
   border: none;
   outline: none;
@@ -30,7 +31,7 @@ const CustomButton = styled.button`
     left: 0;
     bottom: -0.3rem;
     content:'';
-    border-bottom: thin solid ${(props) => props.theme.colors.fontColor};
+    border-bottom: thin solid ${getColor('fontColor')};
     width: 100%;
     transform: ${({ active }) => active ? 'scale3d(1, 1, 1)' : 'scale3d(0, 1, 1)'};
     transition: transform 1s;
@@ -51,7 +52,7 @@ const ToggleSection = styled.div`
   flex-direction: row;
   .slash {
     font-size: 1.2rem;
-    color: ${(props) => props.theme.colors.fontColor};
+    color: ${getColor('fontColor')};
     margin: 0 0.5rem;
   }
 `;

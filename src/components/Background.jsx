@@ -1,8 +1,7 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 import styled from '@emotion/styled';
-import { gridContext } from "../components/contexts/grid"
-
-const getWrapperPadding = ({ theme }) => theme.padding.wrapperPadding;
+import { gridContext } from './contexts/grid';
+import { getColor, getWrapperPadding } from '../library/theme';
 
 const Content = styled.section`
   position: absolute;
@@ -18,7 +17,7 @@ const Content = styled.section`
 const Line = styled.section`
   width: 1px;
   height: 100%;
-  background: ${props => props.theme.colors.inactiveColor};
+  background: ${getColor('inactiveColor')};
   transform: ${({ active }) => active ? 'scale3d(1, 1, 1)' : 'scale3d(1, 0, 1)'};
   transition: transform 2s;
   transform-origin: top;
