@@ -4,14 +4,19 @@ import { fontFace } from "./library/fonts"
 import { darkTheme, lightTheme } from "./library/theme"
 import Router from "./components/Router"
 import OurThemeProvider, { themeContext } from "./components/contexts/theme"
-import OurGridProvider, { gridContext } from "./components/contexts/grid"
+import OurGridProvider from "./components/contexts/grid"
 
 const globalStyles = css`
-  * {
+  *{
+    box-sizing: border-box;
+  }
+  html{
+    font-size: 62.5%;
+  }
+  body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-size: 62.5%;
+    transition: background-color 0.2s;
   }
   a {
     text-decoration: none;

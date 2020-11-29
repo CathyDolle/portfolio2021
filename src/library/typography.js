@@ -23,12 +23,22 @@ GLOBAL TYPOGTAPHY
 // Title
 const Title = styled.h1`
   ${SaolTypo};
+  font-size: 8rem;
+  line-height: 11rem;
+  margin: 0;
 `
 
 // BodyText
 const BodyText = styled.p`
   ${NeueTypo};
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  opacity: 0.8;
+`
+
+// InactiveBodyText
+const InactiveBodyText = styled(BodyText)`
+  color: ${(props) => props.theme.colors.inactiveColor};
 `
 
 // H3
@@ -42,6 +52,7 @@ const SubTitle = styled.h2`
 const Headline = styled.h3`
   ${NeueTypo};
   font-size: 1.6rem;
+  margin: 1rem 0 -0.5rem 0;
   color: ${(props) => props.theme.colors.mainColor};
 `
 
@@ -62,15 +73,15 @@ const MenuLink = styled.span`
     bottom: -2rem;
     right: 0;
     transform: translateX(50%);
-    content: '${(props) => props.translation}';
+    content: "${(props) => props.translation}";
     font-size: 3.5rem;
     color: ${(props) => props.theme.colors.mainColor};
     opacity: 0;
     transition: opacity 1s;
     font-weight: 500;
   }
-  &:hover{
-    &::after{
+  &:hover {
+    &::after {
       opacity: 1;
     }
   }
@@ -82,4 +93,12 @@ const MenuNumberLink = styled.span`
   font-size: 3rem;
 `
 
-export { Title, MenuNumberLink, BodyText, MenuLink, Headline, SubTitle, }
+export {
+  Title,
+  MenuNumberLink,
+  BodyText,
+  MenuLink,
+  Headline,
+  SubTitle,
+  InactiveBodyText,
+}

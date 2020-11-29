@@ -5,6 +5,7 @@ const ContainerContent = styled.section`
   display: flex;
   width: 100%;
   height: 70%;
+  padding: 2% 0;
 `;
 
 const Content = ({children}) => {

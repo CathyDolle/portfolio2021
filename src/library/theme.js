@@ -2,14 +2,14 @@ const lightColors = {
   fontColor: 'black',
   bgColor: 'white',
   mainColor: '#ef4234',
-  lineColor: '#171717',
+  inactiveColor: '#CCCCCC',
 }
 
 const darkColors = {
   fontColor: 'white',
   mainColor: '#ef4234',
   bgColor: 'black',
-  lineColor: '#171717',
+  inactiveColor: '#171717',
 }
 
 const margins = {

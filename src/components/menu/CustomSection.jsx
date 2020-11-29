@@ -1,27 +1,28 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 import styled from '@emotion/styled';
 import { Headline } from '../../library/typography'
 import { themeContext } from '../../components/contexts/theme';
 import { gridContext } from '../../components/contexts/grid';
 
 const CustomSectionContainer = styled.section`
-  position: absolute;
-  top: 11.5%;
-  left: 0;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
+  /* flex: 1; */
+  position: absolute;
+  top: 0;
+  left: 0;
 `;
 
 const CustomButton = styled.button`
   position: relative;
   cursor: pointer;
   background: none;
-  color: white;
+  color: ${(props) => props.theme.colors.fontColor};
   font-size: 1.2rem;
   border: none;
   outline: none;
   text-align: left;
+  padding: 0;
   text-transform: uppercase;
   &::after{
     opacity: 0.8;
@@ -50,7 +51,7 @@ const ToggleSection = styled.div`
   flex-direction: row;
   .slash {
     font-size: 1.2rem;
-    color: white;
+    color: ${(props) => props.theme.colors.fontColor};
     margin: 0 0.5rem;
   }
 `;

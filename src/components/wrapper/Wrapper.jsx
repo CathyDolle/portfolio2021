@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from '@emotion/styled';
 import Background from '../Background'
-import Footer from './Footer';
 import Header from './Header';
 import Content from './Content';
+import Footer from './Footer';
 
 const getWrapperPadding = ({ theme }) => theme.padding.wrapperPadding;
 
@@ -15,7 +15,7 @@ const Container = styled.section`
   padding: 0 ${getWrapperPadding} 0 ${getWrapperPadding};
 `;
 
-const Wrapper = ({ children }) => {
+const Wrapper = ({ children, withFooter }) => {
   return (
     <Container>
       <Background />
@@ -23,7 +23,7 @@ const Wrapper = ({ children }) => {
       <Content>
         {children}
       </Content>
-      <Footer/>
+      {withFooter && <Footer />}
     </Container>
   )
 }
