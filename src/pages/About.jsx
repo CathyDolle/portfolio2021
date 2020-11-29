@@ -1,7 +1,8 @@
 import React from 'react';
 import Wrapper from '../components/wrapper/Wrapper'
 import styled from '@emotion/styled';
-import { Title, BodyText, Headline } from '../library/typography'
+import { Title, BodyText, Headline, ListItem } from '../library/typography'
+import Carrousel from '../components/about/carrousel'
 
 const TextSection = styled.section`
   display: flex;
@@ -33,30 +34,50 @@ function About() {
         <Title>Skills</Title>
         {/* SOFTS */}
         <Headline>SOFTWARES</Headline>
-        <BodyText>
-        ADOBE XD<br/>
-        FIGMA<br/>
-        SKETCH<br/>
-        ILLUSTRATOR<br/>
-        INDESIGN<br/>
-        PHOTOSHOP<br/>
-        INVISION<br/>
-        NOTION<br/>
-        </BodyText>
+        <ListItem>
+          <li>ADOBE XD</li>
+          <li>FIGMA</li>
+          <li>SKETCH</li>
+          <li>ILLUSTRATOR</li>
+          <li>INDESIGN</li>
+          <li>PHOTOSHOP</li>
+          <li>INVISION</li>
+          <li>NOTION</li>
+        </ListItem>
         {/* LANGAGES */}
-        <Headline>Langages</Headline>
-        <BodyText>
-        HTML<br/>
-        CSS / SCSS<br/>
-        JAVASCRIPT<br/>
-        REACT / VUE<br/>
-        PHP<br/>
-        </BodyText>
+        <Headline>LANGAGUES</Headline>
+        <ListItem>
+          <li>HTML</li>
+          <li>CSS / SCSS</li>
+          <li>JAVASCRIPT</li>
+          <li>TWITTER</li>
+          <li>REACT / VUE</li>
+          <li>PHP</li>
+        </ListItem>
       </TextSection>  
       {/* SOCIAL */}
-      <TextSection style={{ flex: 2 }}>
+      <TextSection>
         <Title>Social</Title>
-      </TextSection>    
+        {/* SOFTS */}
+        <Headline>STREAMING</Headline>
+        <BodyText>Im Twitch Partner and love sharing my passion,
+        productivity, video games, and music, 
+        come say hi !
+        </BodyText>
+        {/* LINKS */}
+        <Headline>LINKS</Headline>
+        <ListItem>
+          <li>BEHANCE</li>
+          <li>DRIBBBLE</li>
+          <li>INSTAGRAM</li>
+          <li>TWITTER</li>
+          <li>DISCORD</li>
+          <li>LINKEDIN</li>
+          <li>TWITCH</li>
+        </ListItem>
+      </TextSection>  
+      {/* carroussel*/}
+      <Carrousel/>
     </Wrapper>
   );
 }

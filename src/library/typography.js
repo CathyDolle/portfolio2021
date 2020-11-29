@@ -37,6 +37,13 @@ const BodyText = styled.p`
   opacity: 0.8;
 `
 
+// ListItem
+const ListItem = styled(BodyText)`
+  list-style: none;
+  /* margin: 0; */
+  padding: 0;
+`;
+
 // InactiveBodyText
 const InactiveBodyText = styled(BodyText)`
   color: ${getColor('inactiveColor')};
@@ -102,4 +109,5 @@ export {
   Headline,
   SubTitle,
   InactiveBodyText,
+  ListItem,
 }
