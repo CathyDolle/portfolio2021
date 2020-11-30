@@ -29,7 +29,7 @@ function Menu() {
       <MenuSection>
         <MenuItem to="/" number="02" linkName="Works" translation="プロジェクト"/>
         <MenuAbout to="/About" number="03" linkName="About" translation="情報"/>
-        <MenuItem to="/" number="04" linkName="Archives" translation="アーカイブ"/>
+        <MenuItem to="/Archives" number="04" linkName="Archives" translation="アーカイブ"/>
       </MenuSection>
     </Wrapper>
   )

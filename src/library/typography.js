@@ -107,6 +107,20 @@ const MenuNumberLink = styled.span`
   font-size: 3rem;
 `
 
+/******************************************************
+TYPOGRAPHY FOR ARCHIVES
+*******************************************************/
+
+const ArchivesTitle = styled(MenuLink)`
+  margin-top: -3rem;
+  z-index: 1;
+  pointer-events: none;
+  &::after{
+    opacity: 1;
+  }
+`;
+
+
 export {
   Title,
   MenuNumberLink,
@@ -116,4 +130,5 @@ export {
   SubTitle,
   InactiveBodyText,
   ListItem,
+  ArchivesTitle
 }
