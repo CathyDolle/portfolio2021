@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import AnimeImg from '../../assets/img/about/animes.png'
-import SetupImg from '../../assets/img/about/setup.png'
-import LeagueImg from '../../assets/img/about/league.png'
 import { keyframes } from '@emotion/react';
+import ImgSrc  from './imgSrc'
 
 // Animations
 const carrouselAnimation = keyframes`
@@ -27,8 +25,14 @@ const ImgContainer = styled.div`
   width: 100%;
   height: 100vh;
   img{
-    /* height: calc(100vh / 3); */
     width: 100%;
+    opacity: 0.4;
+    filter: grayscale(100%);
+    transition: opacity 1s;
+    &:hover{
+      opacity: 1;
+      filter: none;
+    }
   }
 `;
 
@@ -37,21 +41,17 @@ const HidingParent = styled.div`
 `;
 
 const ImgItem = styled.div`
-  animation: ${carrouselAnimation} 15s linear infinite;
+  animation: ${carrouselAnimation} 30s linear infinite;
 `;
 
-function carrousel(props) {
+function carrousel() {
   return (
     <CarrouselContainer>
         <ImgContainer>
           <HidingParent>
             <ImgItem>
-              <img src={AnimeImg} alt="AnimeImg"/>
-              <img src={SetupImg} alt="SetupImg"/>
-              <img src={LeagueImg} alt="LeagueImg"/>
-              <img src={AnimeImg} alt="AnimeImg"/>
-              <img src={SetupImg} alt="SetupImg"/>
-              <img src={LeagueImg} alt="LeagueImg"/>
+              <ImgSrc/>
+              <ImgSrc/>
             </ImgItem>
           </HidingParent>
         </ImgContainer>
