@@ -20,6 +20,7 @@ const MenuIconContain = styled.div`
 const LogoContain = styled.div`
   position: absolute;
   left: -21px;
+  z-index: 2;
 `;
 
 function Footer() {
