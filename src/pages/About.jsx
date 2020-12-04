@@ -3,6 +3,8 @@ import Wrapper from '../components/wrapper/Wrapper'
 import styled from '@emotion/styled';
 import { Title, BodyText, Headline, ListItem} from '../library/typography'
 import Carrousel from '../components/about/carrousel'
+import blackResumePDF from '../assets/resume/cathyBlackResume.pdf'
+import whiteResumePDF from '../assets/resume/cathyWhiteResume.pdf'
 
 const TextSection = styled.section`
   display: flex;
@@ -26,9 +28,19 @@ function About() {
         </BodyText>
         {/* Personnality */}
         <Headline>I AM</Headline>
-        <BodyText>Liste des capacités à mettre</BodyText>
+        <ListItem>
+          <li>Perfectionist</li>
+          <li>Autonomous</li>
+          <li>Organized</li>
+          <li>Punctual</li>
+          <li>Curious</li>
+        </ListItem>
         {/* Resume */}
         <Headline>RESUME</Headline>
+        <ListItem>
+          <li><a href={blackResumePDF} download="Cathy's Black Resume" target="_blank">Black version</a></li>
+          <li><a href={whiteResumePDF} download="Cathy's White Resume" target="_blank">White version</a></li>
+        </ListItem>
       </TextSection>
       {/* SKILLS */}
       <TextSection flexEnd paddingBottom>
@@ -60,8 +72,8 @@ function About() {
         <Title>Social</Title>
         {/* SOFTS */}
         <Headline>STREAMING</Headline>
-        <BodyText>Im Twitch Partner and love sharing my passion,
-        productivity, video games, and music, 
+        <BodyText>Im Twitch Partner and love sharing my passion! <br/>
+        UI UX Design, web Development, <br/>video games, art, and music, 
         come say hi !
         </BodyText>
         {/* LINKS */}

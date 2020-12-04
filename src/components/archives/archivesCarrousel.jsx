@@ -46,7 +46,7 @@ const ArchivesItem = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  animation: ${carrouselAnimation} 30s linear infinite;
+  animation: ${carrouselAnimation} 20s linear infinite;
 `;
 
 function carrousel() {

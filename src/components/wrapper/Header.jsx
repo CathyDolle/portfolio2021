@@ -26,7 +26,7 @@ const LogoContain = styled.div`
 function Footer() {
     return (
         <HeaderContent>
-            <LogoContain><Logo color="#ef4234" width="36px" /></LogoContain>
+            <LogoContain><Logo color="#7355fa" width="36px" /></LogoContain>
             <MenuIconContain><MenuIcon/></MenuIconContain>
         </HeaderContent>
     );
