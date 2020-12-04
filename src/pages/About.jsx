@@ -2,7 +2,7 @@ import React from 'react';
 import Wrapper from '../components/wrapper/Wrapper'
 import styled from '@emotion/styled';
 import { Title, BodyText, Headline, ListItem} from '../library/typography'
-import Carrousel from '../components/about/carrousel'
+import Carrousel from '../components/about/Carrousel'
 import blackResumePDF from '../assets/resume/cathyBlackResume.pdf'
 import whiteResumePDF from '../assets/resume/cathyWhiteResume.pdf'
 

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import styled from '@emotion/styled';
 import { Headline } from '../../library/typography'
-import { themeContext } from '../../components/contexts/theme';
-import { gridContext } from '../../components/contexts/grid';
+import { themeContext } from '../contexts/theme';
+import { gridContext } from '../contexts/grid';
 import { getColor } from '../../library/theme';
 
 const CustomSectionContainer = styled.section`

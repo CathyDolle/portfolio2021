@@ -11,11 +11,11 @@ const MenuLinkContent = styled(NavLink)`
 `;
 
 
-function MenuItem({number, linkName, to, className, translation}) {
+function MenuItem({number, linkName, to, className, translation, opacity}) {
   return (
     <MenuLinkContent to={to} className={className}>
       <MenuNumberLink>{number}</MenuNumberLink>
-      <MenuLink translation={translation}>{linkName}</MenuLink>
+      <MenuLink opacity={opacity} translation={translation}>{linkName}</MenuLink>
     </MenuLinkContent>
   );
 }

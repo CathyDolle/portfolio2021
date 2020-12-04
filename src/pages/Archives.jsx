@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled'
 import Wrapper from '../components/wrapper/Wrapper'
 import { ArchivesTitle } from '../library/typography'
-import ArchivesCarrousel from '../components/archives/archivesCarrousel'
+import ArchivesCarrousel from '../components/archives/ArchivesCarrousel'
 
 
 const ArchivesContainer = styled.section`
