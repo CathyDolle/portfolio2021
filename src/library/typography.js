@@ -43,6 +43,7 @@ const ListItem = styled(BodyText)`
   /* margin: 0; */
   padding: 0;
   a {
+    text-decoration: underline;
     transition: color 0.5s;
     &:hover {
       color: ${getColor("mainColor")};

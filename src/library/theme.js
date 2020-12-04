@@ -1,13 +1,13 @@
 const lightColors = {
   fontColor: 'black',
   bgColor: 'white',
-  mainColor: '#ef4234',
+  mainColor: '#7355fa',
   inactiveColor: '#CCCCCC',
 }
 
 const darkColors = {
   fontColor: 'white',
-  mainColor: '#ef4234',
+  mainColor: '#7355fa',
   bgColor: 'black',
   inactiveColor: '#171717',
 }
