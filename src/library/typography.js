@@ -1,6 +1,7 @@
 import styled from "@emotion/styled"
 import { css } from "@emotion/react"
 import { getColor } from "./theme"
+import { NavLink } from 'react-router-dom';
 
 /******************************************************
 FAMILY FONT
@@ -37,6 +38,34 @@ const BodyText = styled.p`
   opacity: 0.8;
 `
 
+const Link = styled(NavLink)`
+ ${NeueTypo};
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  opacity: 0.8;
+  transition: color 0.5s;
+  &::after{
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    content:'';
+    border-bottom: thin solid ${getColor('fontColor')};
+    width: 100%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 1s;
+    transform-origin: left;
+  }
+  &:hover{
+    &::after{
+      width: 100%;
+      transform: scale3d(1, 1, 1);
+      transition: transform 1s;
+    }
+  }
+`;
+
 // ListItem
 const ListItem = styled(BodyText)`
   list-style: none;
@@ -50,6 +79,8 @@ const ListItem = styled(BodyText)`
     }
   }
 `
+
+
 
 // InactiveBodyText
 const InactiveBodyText = styled(BodyText)`
@@ -91,7 +122,7 @@ const MenuLink = styled.span`
     content: "${(props) => props.translation}";
     font-size: 3.5rem;
     color: ${getColor("mainColor")};
-    opacity: 0;
+    opacity: ${({opacity}) => opacity ? '1' : '0'};
     transition: opacity 1s;
     font-weight: 500;
   }
@@ -121,6 +152,16 @@ const ArchivesTitle = styled(MenuLink)`
   }
 `;
 
+/******************************************************
+TYPOGRAPHY FOR ARCHIVES
+*******************************************************/
+
+const WorksTitle = styled(MenuLink)`
+  z-index: 1;
+  &::after{
+    opacity: 1;
+  }
+`;
 
 export {
   Title,
@@ -131,5 +172,7 @@ export {
   SubTitle,
   InactiveBodyText,
   ListItem,
-  ArchivesTitle
+  ArchivesTitle,
+  WorksTitle,
+  Link
 }

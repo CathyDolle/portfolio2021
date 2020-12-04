@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { keyframes } from '@emotion/react';
-import ArchivesSrc  from './archivesSrc'
+import ArchivesSrc  from './ArchivesSrc'
 import { getWrapperPadding } from '../../library/theme';
 
 // Animations
