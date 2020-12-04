@@ -50,14 +50,14 @@ const ScrollContainer = styled.div`
 `;
 
 const Line = styled.div`
-  height: 200px;
+  height: 20%;
   width: 1px;
   background: ${getColor("fontColor")};
   margin-top: 5px;
 `;
 
 const RotateLink = styled(Link)`
-  bottom: 240px;
+  bottom: calc(20% + 39px);
   position: absolute;
   transform: rotate(-90deg);
   width: 69px;
