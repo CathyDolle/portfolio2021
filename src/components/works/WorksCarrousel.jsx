@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled'
 import { getColor } from "../../library/theme"
-import Test from '../../assets/img/archives/setup.jpeg'
+import coinyImg from '../../assets/img/works/coiny.jpg'
 
 const WorksCarrouselContainer = styled.section`
   display: flex;
@@ -37,7 +37,7 @@ const Bullet = styled.div`
 const ImgContainer = styled.div`
   height: 70%;
   width: calc(100% - 8px);
-  background-image: url(${Test});
+  background-image: url(${coinyImg});
   background-size: cover;
   background-position: center;
 `;

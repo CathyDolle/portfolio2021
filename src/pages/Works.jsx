@@ -75,7 +75,7 @@ function Works() {
               <li>Front end developer</li>
             </ListItem>
           </RolesContainer>
-          <MenuItem opacity to="/" number="01" translation='Test' linkName="Arkestar"/>
+          <MenuItem opacity to="/" number="01" translation='角' linkName="Coiny"/>
           <LinkContainer>
             <Link to="/">OPEN CASE STUDY</Link>
             <img src={arrow} alt="arrow"/>
